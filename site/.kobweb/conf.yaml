@@ -1,0 +1,14 @@
+site:
+  title: "Showdown"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/kotlin-webpack/js/developmentExecutable/binkes.js"
+      api: "build/libs/binkes.jar"
+    prod:
+      script: "build/kotlin-webpack/js/productionExecutable/binkes.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
